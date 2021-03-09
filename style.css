@@ -1,0 +1,68 @@
+body {
+  background-color: lightblue;
+  padding: 5% 20%;
+  margin: 0;
+  text-align: center;
+}
+
+header,
+main,
+footer {
+  background-color: white;
+  margin: 0;
+}
+
+h1,
+h2,
+th {
+  margin: 0;
+  color: rgb(70, 152, 203);
+  font-weight: bold;
+}
+h1,
+h2 {
+  padding: 30px;
+}
+
+form div,
+article {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form div div,
+article div {
+  display: block;
+  margin: 0 15px;
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+input:disabled {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+input:disabled::placeholder {
+  color: black;
+}
+button {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0 0;
+  table-layout: fixed;
+}
+
+footer {
+  padding: 20px 0 10px;
+}
+p {
+  padding: 5px;
+  margin: 0;
+  font-size: 11px;
+}

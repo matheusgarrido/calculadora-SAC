@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Financeiro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simulação de financiamento</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Simulação</h2>
+        <form>
+          <div>
+            <div>
+              <label for="valor">Valor:</label>
+              <input type="number" placeholder="0" id="valor" value="200000" />
+            </div>
+            <div>
+              <label for="prazoano">Prazo (anos):</label>
+              <input type="number" placeholder="0" id="prazoano" value="20" />
+            </div>
+            <div>
+              <label for="jurosano">Juros ao ano:</label>
+              <input type="number" placeholder="0" id="jurosano" value="0.08" />
+            </div>
+          </div>
+          <button type="button">Simular</button>
+        </form>
+      </section>
+      <section>
+        <h2>Resultado</h2>
+        <article>
+          <div>
+            <label for="prazomes">Prazo (meses):</label>
+            <input type="number" placeholder="0" id="prazomes" disabled />
+          </div>
+          <div>
+            <label for="jurosmes">Juros ao mês:</label>
+            <input type="number" placeholder="0" id="jurosmes" disabled />
+          </div>
+          <div>
+            <label for="jurosacumulados">Juros acumulados:</label>
+            <input
+              type="number"
+              placeholder="0"
+              id="jurosacumulados"
+              disabled
+            />
+          </div>
+        </article>
+        <article id="table"></article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por Matheus Garrido &copy; 2021</p>
+      <p>
+        Exercício do bootcamp de front-end usando as tecnologias HTML5, CSS3 e
+        JavaScript.
+      </p>
+    </footer>
+    <script src="./functions.js"></script>
+  </body>
+</html>
